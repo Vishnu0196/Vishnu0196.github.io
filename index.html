@@ -13,11 +13,11 @@
         }
 
         :root {
-            --bg-primary: #0d0d14;
-            --bg-secondary: #1a1625;
-            --bg-card: #252040;
-            --text-primary: #ffffff;
-            --text-secondary: #b8b5d1;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --bg-card: #ffffff;
+            --text-primary: #2d3748;
+            --text-secondary: #718096;
             --accent: #8b5cf6;
             --accent-hover: #7c3aed;
             --accent-secondary: #a855f7;
@@ -45,7 +45,7 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(10, 10, 10, 0.95);
+            background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
             z-index: 1000;
             border-bottom: 1px solid var(--border);
@@ -106,7 +106,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: radial-gradient(circle at center, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+            background: radial-gradient(circle at center, rgba(139, 92, 246, 0.05) 0%, transparent 70%);
             position: relative;
         }
 
@@ -114,7 +114,7 @@
             font-size: clamp(3rem, 8vw, 6rem);
             font-weight: 800;
             margin-bottom: 1rem;
-            background: linear-gradient(135deg, #ffffff 0%, #b3b3b3 100%);
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -157,7 +157,7 @@
 
         .btn-primary {
             background: var(--gradient);
-            color: var(--bg-primary);
+            color: white;
             box-shadow: var(--shadow);
         }
 
@@ -169,7 +169,7 @@
         .btn-secondary {
             background: transparent;
             color: var(--text-primary);
-            border: 2px solid var(--border);
+            border: 2px solid var(--accent);
         }
 
         .btn-secondary:hover {
@@ -443,13 +443,13 @@
             width: 50px;
             height: 50px;
             border-radius: 8px;
-            background: white;
+            background: #f7fafc;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.2rem;
             color: var(--accent);
-            border: 1px solid var(--border);
+            border: 1px solid #e2e8f0;
             flex-shrink: 0;
             padding: 5px;
         }
@@ -604,7 +604,7 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo">VVR.K</div>
+            <div class="logo">VK</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#education">Education</a></li>
@@ -695,7 +695,8 @@
                     <div class="experience-header">
                         <div class="company-header">
                             <div class="company-logo">
-                                <i class="fas fa-truck"></i>
+                                <!-- Optym Logo - Using generic logistics icon for now -->
+                                <i class="fas fa-truck" style="color: #8b5cf6;"></i>
                             </div>
                             <div>
                                 <div class="experience-title">Software Engineer - Backend and Systems</div>
@@ -725,7 +726,10 @@
                     <div class="experience-header">
                         <div class="company-header">
                             <div class="company-logo">
-                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBzdHJva2U9IiM0ZWNkYzQiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIvPgo8L3N2Zz4K" alt="Cohesity Logo">
+                                <!-- Cohesity Logo - Blue C shape -->
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 35C29.389 35 37 27.389 37 18S29.389 1 20 1C13.5 1 8 4.5 5 10" stroke="#4A90E2" stroke-width="6" stroke-linecap="round" fill="none"/>
+                                </svg>
                             </div>
                             <div>
                                 <div class="experience-title">Software Engineer Intern</div>
@@ -753,7 +757,13 @@
                     <div class="experience-header">
                         <div class="company-header">
                             <div class="company-logo">
-                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxOCIgZmlsbD0iIzRkMzA5MSIgc3Ryb2tlPSIjNGQzMDkxIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8dGV4dCB4PSIyMCIgeT0iMjYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5JSVRLSFAsIEtIQVJBR1BVUjwvdGV4dD4KPC9zdmc+Cg==" alt="IIT Kharagpur Logo">
+                                <!-- IIT Kharagpur Logo - Tree with gear -->
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20" r="19" fill="none" stroke="#4d3091" stroke-width="2"/>
+                                    <path d="M20 8L22 15L25 12L23 18L28 16L25 20L30 22L25 24L28 28L23 26L25 32L22 29L20 36L18 29L15 32L17 26L12 28L15 24L10 22L15 20L12 16L17 18L15 12L18 15L20 8Z" fill="#4d3091"/>
+                                    <path d="M20 15C18 15 16 17 16 19C16 21 18 23 20 23C22 23 24 21 24 19C24 17 22 15 20 15Z" fill="white"/>
+                                    <path d="M14 30L16 32L20 28L24 32L26 30L22 26L20 28L18 26L14 30Z" fill="#4d3091"/>
+                                </svg>
                             </div>
                             <div>
                                 <div class="experience-title">Teaching Assistant</div>
@@ -787,7 +797,12 @@
             <div class="education-item">
                 <div class="company-header">
                     <div class="company-logo">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9IiM5QTMwMzAiIHJ4PSI1Ii8+CiAgPHRleHQgeD0iMjUiIHk9IjIwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTgiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+VTwvdGV4dD4KICA8dGV4dCB4PSIyNSIgeT0iMzgiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMCIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NQVNTLE9GIE1BU1M8L3RleHQ+Cjwvc3ZnPgo=" alt="UMass Logo">
+                        <!-- UMass Logo - Maroon U with Mass text -->
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="4" fill="#9A3030"/>
+                            <text x="20" y="18" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">U</text>
+                            <text x="20" y="32" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="white" text-anchor="middle">MASS</text>
+                        </svg>
                     </div>
                     <div>
                         <div class="education-title">MS in Computer Science</div>
@@ -804,7 +819,16 @@
             <div class="education-item">
                 <div class="company-header">
                     <div class="company-logo">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIyNSIgY3k9IjI1IiByPSIyMyIgZmlsbD0iIzRkMzA5MSIgc3Ryb2tlPSIjNGQzMDkxIiBzdHJva2Utd2lkdGg9IjIiLz4KICA8cGF0aCBkPSJNMjUgMTBMMjcgMjBMMzUgMjJMMjcgMzBMMjUgNDBMMjMgMzBMMTUgMjJMMjMgMjBMMjUgMTBaIiBmaWxsPSJ3aGl0ZSIvPgogIDxjaXJjbGUgY3g9IjE4IiBjeT0iMTgiIHI9IjMiIGZpbGw9IndoaXRlIi8+CiAgPGNpcmNsZSBjeD0iMzIiIGN5PSIxOCIgcj0iMyIgZmlsbD0id2hpdGUiLz4KICA8Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIzIiBmaWxsPSJ3aGl0ZSIvPgogIDxjaXJjbGUgY3g9IjE4IiBjeT0iMzIiIHI9IjMiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=" alt="IIT Kharagpur Logo">
+                        <!-- IIT Kharagpur Logo - Simplified tree design -->
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="19" fill="none" stroke="#4d3091" stroke-width="2"/>
+                            <path d="M20 8L22 15L25 12L23 18L28 16L25 20L30 22L25 24L28 28L23 26L25 32L22 29L20 36L18 29L15 32L17 26L12 28L15 24L10 22L15 20L12 16L17 18L15 12L18 15L20 8Z" fill="#4d3091"/>
+                            <circle cx="15" cy="15" r="2" fill="white"/>
+                            <circle cx="25" cy="15" r="2" fill="white"/>
+                            <circle cx="25" cy="25" r="2" fill="white"/>
+                            <circle cx="15" cy="25" r="2" fill="white"/>
+                            <path d="M20 12C18 12 16 14 16 16C16 18 18 20 20 20C22 20 24 18 24 16C24 14 22 12 20 12Z" fill="white"/>
+                        </svg>
                     </div>
                     <div>
                         <div class="education-title">B.Tech, M.Tech in Computer Science and Engineering</div>
@@ -816,7 +840,7 @@
                     <p><strong>CGPA:</strong> 8.0/10.0</p>
                     <p><strong>Focus:</strong> Computer Science and Engineering with research in AI/ML</p>
                 </div>
-            </div>
+            </div></div>
             </div>
         </div>
     </section>
